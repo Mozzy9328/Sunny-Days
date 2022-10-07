@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b25ea38661.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li class="logo">
+              <img src="/public/uploads/logo.png" alt="a logo of the company" />
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="add-product.html">Add Product</a></li>
+            <li>
+              <a style="border-bottom: none" href="cart-page.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="numberofitems"></span>
+              </a>
+              <a
+                style="margin-left: 40px; border-bottom: none"
+                href="login.html"
+                ><i class="fa-solid fa-right-to-bracket"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <div class="cart"></div>
+        </div>
+      </header>
+      <main>
+        <h1>Admin Section</h1>
+        <div class="container">
+          <div class="message"></div>
+          <form action="">
+            <div>
+              <input id="name" placeholder="Name" />
+            </div>
+            <div>
+              <input id="price" placeholder="Price" />
+            </div>
+            <div>
+              <input type="text" id="description" placeholder="Description" />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="image-url"
+                id="image-url"
+                placeholder="Enter image url here"
+              />
+            </div>
+            <input id="id" placeholder="Insert Product Id for Deletion" />
+            <div class="checkbox">
+              <label value="featured">Is the product featured? </label>
+              <input
+                type="checkbox"
+                name="featured"
+                id="featured"
+                style="width: 10%"
+              />
+            </div>
+            <div class="form-buttons">
+              <button type="submit" id="add">Add Item</button>
+              <div class="delete-cont">
+                <button type="button" class="delete">Delete</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>Copyright 2022</p>
+    </footer>
+    <script src="js/addProduct.js" type="module"></script>
+  </body>
+</html>
